@@ -1,13 +1,20 @@
+@import url("http://fonts.googleapis.com/css?family=Roboto");
+
 // 1.config files and helpers
+@import 'abstracts/_colors.scss';
+@import 'abstracts/_type.scss';
 
 
 // 2. Vendor
-
+@import 'vendor/_normailze.scss';
 
 // 3. Base styles
-
+@import 'base/_base.scss';
 
 // 4. Layouts
+@import 'layout/_grid.scss';
+@import 'layout/_header.scss';
+@import 'layout/_hero.scss';
 
 
 // 5. Components
