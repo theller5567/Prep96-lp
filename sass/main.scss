@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/css?family=Roboto");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:light,normal,bold,black&display=swap');
 
 // 1.config files and helpers
 @import 'abstracts/_colors.scss';
@@ -8,14 +8,22 @@
 // 2. Vendor
 @import 'vendor/_normailze.scss';
 
+@import 'layout/_grid.scss';
+
 // 3. Base styles
 @import 'base/_base.scss';
+@import 'base/_typography.scss';
 
 // 4. Layouts
-@import 'layout/_grid.scss';
 @import 'layout/_header.scss';
 @import 'layout/_hero.scss';
+@import 'layout/_nav.scss';
+@import 'layout/_home-promo.scss';
+@import 'layout/_home-sales-points.scss';
+@import 'layout/_footer.scss';
 
 
 // 5. Components
+@import 'components/_buttons.scss';
+@import 'components/_cta.scss';
 
