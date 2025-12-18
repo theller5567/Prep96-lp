@@ -1,0 +1,47 @@
+.header {
+    position: absolute;
+    color: $white;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    z-index: 1;
+    &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: black;
+        opacity: .25;
+    }
+    .container {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .container * {
+        z-index: 1;
+    }
+}
+
+.questions {
+    span {
+        font-weight: 300;
+        font-size: 1rem;
+        padding-right: 1rem;
+        display: none;
+        @media(min-width: $min-width){
+            display: inline-block;
+        }
+    }
+}
+
+.logo {
+    width: 25%;
+    min-width: 10rem;
+    max-width: 15rem;
+    display: contents;
+}

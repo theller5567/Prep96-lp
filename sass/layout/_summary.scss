@@ -1,0 +1,8 @@
+.summary {
+    @media(min-width: $min-width){
+        transform: translateY(-10rem);
+    }
+    ul li {
+        padding: 0.5rem 0;
+    }
+}

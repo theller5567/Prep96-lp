@@ -1,15 +1,378 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
+
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="description" content="" />
-	<meta name="author" content="" />
-	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
-	<title></title>
-	<link href="css/main.css" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prep 96 Automated Homogenizer | OMNI</title>
+  <link href="css/style.css" rel="stylesheet" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="js/slippry-min.js"></script>
 </head>
+
 <body>
-    <h1>HELLO WORLD</h1>
-	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <div id="lh96">
+  <div id="modal" class="modal">
+    <div class="modal-header">
+      <div class="title title-large">Request a quote</div>
+      <button data-close-button class="close-modal">X</button>
+    </div>
+    <div class="modal-body">
+      <!-- {{widget type="VladimirPopov\WebForms\Block\Widget\Form" webform_id="12" template="webforms/form/default.phtml" after_submission_form="0" scroll_to="0" async_load="0"}} -->
+      <form class="form" id="form1" name="quote-request" method="POST" data-netlify="true">
+        <p class="name">
+          <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+        </p>
+        <p class="email">
+          <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+        </p>
+        <p class="text">
+          <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+        </p>
+        <div class="submit">
+          <input type="submit" value="SEND" class="btn modal-btn"/>
+          <div class="ease"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <header class="header">
+    <div class="container grid grid--full">
+      <div class="logo">
+        <img src="images/omni-logo.png" alt="Omni International">
+      </div>
+      <div class="questions">
+        <span class="fw-light">Making Sample Prep Easy</span>
+        <button class="btn btn--cta btn--sm">Have Questions?</button>
+      </div>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container grid">
+      <div class="col col--1-2">
+        <h1 class="title-hero"><span class="fw-light">Omni</span> <span class="text-no-break">LH 96</span></h1>
+       
+          <h2 class="text-secondary title-large">Time is precious, spend it on what truly matters.</h2>
+        <p>"The LH 96 does the entire front end of our sample prep. We can just walk away while it works. It’s amazing!"<br>Noah Post,<br>- IONIS Pharmaceuticals</p>
+         <button
+          class="btn btn--accent btn--lg" data-modal-target="#modal">request a quote</button>
+        <div class="made-in-usa"> <img class="filter-white" src="images/svg/usa2.svg" alt="Made in USA"> </div>
+      </div>
+      <div class="col col--1-2 hero-lh96">
+        <div class="container">
+          <div class="lg-container">
+            <img class="lg-image"
+              src="images/lh96/LH96-TRANS-BACK-trimmed.png" height="3152" width="2897" />
+        
+            <div style="top: 38%; left: 40%;" class="lg-hotspot lg-hotspot--transfer-arm">
+              <div class="lg-hotspot__button"></div>
+              <div class="lg-hotspot__label">
+                <img src="https://23216378.fs1.hubspotusercontent-na1.net/hubfs/23216378/LH96%20Images/pipette4.jpg" alt="">
+                <p>Transfer Arm</p>
+              </div>
+            </div>
+        
+            <div style="top: 35%; left: 49%;" class="lg-hotspot lg-hotspot--diluting">
+              <div class="lg-hotspot__button"></div>
+              <div class="lg-hotspot__label">
+                <img src="https://23216378.fs1.hubspotusercontent-na1.net/hubfs/23216378/LH96%20Images/pipette3.jpg" alt="">
+                <p>Diluting</p>
+              </div>
+            </div>
+        
+            <div style="top: 35%; left: 58%;" class="lg-hotspot lg-hotspot--homogenizing">
+              <div class="lg-hotspot__button"></div>
+              <div class="lg-hotspot__label">
+                <img src="https://23216378.fs1.hubspotusercontent-na1.net/hubfs/23216378/LH96%20Images/pipette2.jpg" alt="">
+                <p>Homogenizing</p>
+              </div>
+            </div>
+        
+            <div style="top: 87%; left: 35%;" class="lg-hotspot lg-hotspot--weighing-platform">
+              <div class="lg-hotspot__button"></div>
+              <div class="lg-hotspot__label">
+                <img src="https://23216378.fs1.hubspotusercontent-na1.net/hubfs/23216378/LH96%20Images/scale.jpg" alt="">
+                <p>Weighing Platform</p>
+              </div>
+            </div>
+            
+             <div style="top: 64%; left: 90%;" class="lg-hotspot lg-hotspot--pipette">
+              <div class="lg-hotspot__button"></div>
+              <div class="lg-hotspot__label">
+                <img src="https://23216378.fs1.hubspotusercontent-na1.net/hubfs/23216378/LH96%20Images/pipette1.jpg" alt="">
+                <p>Pipette</p>
+              </div>
+            </div>
+        
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="features">
+    <div class="container grid">
+      <div class="col col--1-2">
+        <h1> <span class="text-accent text-block">Automate</span> your workflow today </h1>
+        <p>The OMNI LH 96 is a fully automated liquid handling
+          and homogenizer workstation.</p>
+          <p>The OMNI LH 96 has a
+            modular design, small footprint, and brush-less motors
+            for automated homogenizing, but also integrates multiple
+            liquid handling steps, such as weighing, diluting, and
+            pipetting into one end-to-end system.</p>
+            <p>Fully customizable, the OMNI LH 96 can increase
+              productivity, reduce errors, and improve results, completing
+              large projects faster than otherwise possible.</p>
+          
+      </div>
+      <div class="col col--1-2 features--items">
+        <div class="features--item"> <img class="filter-accent" src="images/svg/stop-clock.svg" alt="">
+          <div>
+            <h2>Walk away procesing</h2>
+            <p>Save time & money working on other tasks knowing you'll get consistent and accurate samples.</p>
+          </div>
+        </div>
+        <div class="features--item"> <img class="filter-accent" src="images/svg/96.svg" alt="">
+          <div>
+            <h2>High Throughput</h2>
+            <p>Process up to 96 samples in a single batch, in tubes ranging from 1.5 - 50 mL.</p>
+          </div>
+        </div>
+        <div class="features--item"> <img class="filter-accent" src="images/svg/interactivity.svg" alt="">
+          <div>
+            <h2>GUI Workflow Software</h2>
+            <p>Create custom sample processing profiles in the LH 96 software</p>
+          </div>
+        </div>
+        <div class="features--item"> <img class="filter-accent" src="images/svg/cross-contamination.svg" alt="">
+          <div>
+            <h2>Eliminate Cross Contamination</h2>
+            <p>A fresh tip is selected for each sample and then discarded once processing is complete, thus eliminating
+              cross contamination.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="free-demo">
+    <div class="container grid">
+      <div class="col text-center">
+        <h1>See how the OMNI LH 96 fits in your lab workflow</h1>
+        <p class="text-secondary">Contact us today and a sales expert will contact you to get started.</p> 
+        <button class="btn btn--cta">Talk with an expert</button>
+      </div>
+    </div>
+  </section>
+  <section class="carousel">
+    <ul id="features-slider">
+      <li>
+        <div class="slide-content-wrapper video" data-name="slide-v">
+          <div class="slide-content slide-col">
+            <iframe width="100%" height="100%" style="min-height: 400px;" src="https://www.youtube.com/embed/YI0a3pvd8RU" title="LH 96 Automated Homogenizer Workstation | High-Throughput Sample Prep with Liquid Handling" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <!-- <div class="slide-content slide-col"><h2>See the Prep 96 in action!</h2></div> -->
+        </div>
+      </li>
+      <li>
+        <div class="slide-content-wrapper" data-name="slide1">
+          <div class="slide-content slide-col">
+            <h1>ELIMINATE CROSS CONTAMINATION</h1>
+            <p>The LH 96 can utilize 7 mm Omni Tips™ plastic disposable generator probes. A fresh tip is
+              selected for each sample and then discarded once processing is complete, thus eliminating cross
+              contamination.</p>
+            <p>Omni Tips remove the tedious task of disassembly and cleaning of stainless-steel generator probes. With
+              the ability to have a one-use generator probe, Omni Tips are an ideal solution for applications targeted
+              at nucleic acid extraction, where reproducibility is critical or those where false positives need to be
+              avoided at all costs.</p>
+            <div class="call-out"> <img class="filter-accent" src="images/svg/confidence.svg" alt="">
+              <p>Confidence in knowing that precious samples & expensive reagents were not wasted</p>
+              <p class="text-call-out">INVALUABLE!</p>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="slide-content-wrapper" data-name="slide2">
+          <div class="slide-content slide-col">
+            <h1>HUMAN LIKE GENERATOR PROBE MOVEMENT</h1>
+            <p>The system was designed to provide automated homogenization using the same generator probe movement as a
+              manual handheld homogenizer operated by a laboratory technician.</p>
+            <h1>Whisper Drive Technology</h1>
+            <p>Featuring Whisper Drive Technology, the unit is equipped with 4 x 100-watt brushless motors and is
+              virtually maintenance-free and ultra-quiet during operation. With whisper drive technology the motor holds
+              processing speed to +/- 1% to ensure reproducibility and accuracy across all samples regardless of
+              fluctuations in sample size and viscosity.</p>
+            <div class="call-out"> <img class="filter-accent" src="images/svg/excited.svg" alt="">
+              <p>Removing the uncertainty & achieving a new level of performance and compliance in your laboratory
+                automation workflow</p>
+              <p class="text-call-out">PRICELESS!</p>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="slide-content-wrapper" data-name="slide3">
+          <div class="slide-content slide-col">
+            <h1>LARGE VOLUMES AT HIGH THROUGHPUT</h1>
+            <p>The LH 96 homogenizer provides automated homogenization of up to ninety-six samples in a single batch
+              in sample tubes ranging from 5 to 50 mL With the Omni LH 96 workflow software, methods can be created
+              and deployed in minutes through an interactive GUI for hands-free sample preparation.</p>
+            <h1>Increases speed and efficiency for large volume workflows</h1>
+            <div class="call-out call-out--lg"> <img class="filter-accent" src="images/svg/efficiency.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    </div>
+  </section>
+  <section class="summary">
+    <div class="container grid">
+      <div class="col col--1-2">
+        <h1>Summary of <span class="text-accent">features</span></h1>
+        <p>The small footprint fits into most bio-safety cabinets and fume hoods. User-friendly programming makes
+          saving, recalling, or changing existing methods easy. Omni patented Whisper Drive Technology™ with brush-less
+          motors delivers maintenance-free, ultra-quiet, maximum processing power.</p>
+        <ul>
+          <li>Automated homogenization of up to ninety-six samples</li>
+          <li>Liquid handling of up to four separate liquids</li>
+          <li>Pipetting and liquid transfer</li>
+          <li>Process 250 μl to 40 mL in 1.5 to 50 mL tubes</li>
+          <li>Create custom sample processing profiles in the LH 96 software</li>
+          <li>Unique oscillating motion to ensure complete homogenization</li>
+          <li>Variable speed from 500 to 28,000 rpm</li>
+          <li>Compatible with 7 mm OMNI Tips™ Plastic Omni Tips™</li>
+          <li>Compatible with 5, 7 or 10 mm stainless steel generator probes</li>
+          <li>Ultrasonic cleaning bath for stainless steel probes</li>
+        </ul> <button class="btn btn--cta btn--lg">Request a quote today</button>
+      </div>
+      <div class="col col--1-2"> <img src="images/prep96-reflection.jpg"
+          alt="Omni Prep 96 Automated Homogenizer Workstation"> </div>
+    </div>
+  </section>
+  <section id="roi">
+      <div class="container grid">
+        <div class="col col--full">
+          <h1>Reducing Labor Costs & Increasing Value</h1>
+          <p>When you consider the challenges related to finding workers for physically demanding, repetitive jobs, the benefits to integrating a Prep96 Automated Homogenizer become very clear. Let's compare manual labor with automated labor.</p>
+        </div>
+        <div class="col col--1-2">
+          <div class="roi-header">
+            <img src="images/svg/calculator.svg" alt="savings icon" class="svg calculator"><span>ROI CALCULATOR</span>
+          </div>
+          <form id="roi-calculator">
+            <p class="name">
+              <label class="feedback-label" for="total_samples_processed_per_day">Total Samples Processed per Day</label>
+              <input name="total_samples_processed_per_day" type="number" min="1" max="384" class="input feedback-input" placeholder="Total Samples Processed per Day" id="total_samples_processed_per_day" value="96" />
+            </p>
+            <p class="email">
+              <label class="feedback-label" for="lab_technician_cost_per_year">Lab Technician Cost per Year</label>
+              <input name="lab_technician_cost_per_year" type="number" min="30000" max="200000" class="input feedback-input" id="lab_technician_cost_per_year" placeholder="Lab Technician Cost per Year" value="120000" />
+            </p>
+            <p class="text">
+              <label class="feedback-label" for="total_staff_supporting_assay">Total Staff Supporting Assay</label>
+              <input name="total_staff_supporting_assay" type="range" value="1" min="1" max="4" class="input range" id="total_staff_supporting_assay" />
+              <output id="rangevalue">1</output>
+            </p>
+            <p class="text">
+              <label class="feedback-label" for="sample_processing_labor_mins_per_sample">Sample Processing Labor (mins) per Sample</label>
+              <!-- <input name="sample_processing_labor_mins_per_sample"  type="range" min="1" max="20" step="05" class="feedback-input" id="sample_processing_labor_mins_per_sample" placeholder="Sample Processing Labor (mins) per Sample" /> -->
+              <input type="range" value="1.5" min="1" max="20" step=".5" oninput="rangevalue.value=value" class="input range" id="sample_processing_labor_mins_per_sample"/>
+              <output id="rangevalue">1.5</output>
+            </p>
+            <p class="text">
+              <label class="feedback-label" for="">Error Rate %</label>
+              <input name="error_rate" type="number" min="0" max="100" class="input feedback-input" id="error_rate" placeholder="Error Rate %" value="5" />
+            </p>
+            <div class="submit">
+              <button type="submit" class="btn-calculate">Calculate</button>
+            </div>
+          </form>
+        </div>
+        <div class="col col--1-2 outputs">
+          <div class="roi-header">
+            <img src="images/svg/savings.svg" alt="savings icon" class="svg savings"><span>SAVINGS</span>
+          </div>
+          <p class="output" data-name="number_of_samples_saved_each_year_using_prep_96">Number of Samples Saved each Year using Prep 96: <span data-id="box1" data-output="number_of_samples_saved_each_year_using_prep_96"></span></p>
+          <p class="output" data-name="labor_hours_gained_each_year_using_prep_96">Labor hours gained each Year using Prep 96: <span data-output="labor_hours_gained_each_year_using_prep_96"></span></p>
+          <p class="output" data-name="estimated_return_on_investment_in_months">Estimated Return on Investment in Months: <span data-output="estimated_return_on_investment_in_months"></span></p>
+          <p class="output" data-name="estimated_savings_each_year">Estimated  Savings each Year: <span data-output="estimated_savings_each_year"></span></p>
+          <em>(including labor, consumables and reagents)</em>
+
+          <div class="testing">
+            <h2>Variables - Testing</h2>
+            <p>Total Sample Tube Cost Batch Cost<span data-id="Total Sample Tube Cost Batch Cost"></span></p>
+            <p>Total Homogenization Probe Batch Cost<span data-id="Total Homogenization Probe Batch Cost"></span></p>
+            <p>Total Reagent/Buffer Batch Cost<span data-id="Total Reagent/Buffer Batch Cost"></span></p>
+            <p>Total Labor Cost to Process Sample Batch<span data-id="Total Labor Cost to Process Sample Batch"></span></p>
+            <p>Daily Total per Sample<span data-id="Daily Total per Sample"></span></p>
+            <p>Daily Total per Batch<span data-id="Daily Total per Batch"></span></p>
+            <p>Samples/Year<span data-id="Samples/Year"></span></p>
+            <p>Number of samples to be repeated per Year<span data-id="Number of samples to be repeated per Year"></span></p>
+            <p>Annual Cost<span data-id="Annual Cost"></span></p>
+            <p>Repeat Sample Cost<span data-id="Repeat Sample Cost"></span></p>
+            <p>Additional Staff Cost Supporting Assay<span data-id="Additional Staff Cost Supporting Assay"></span></p>
+            <p>Total Annual Cost<span data-id="Total Annual Cost"></span></p>
+            <p>Labor Time Saved per Year (hours)<span data-id="Labor Time Saved per Year (hours)"></span></p>
+            <p>Labor Savings per Year<span data-id="Labor Savings per Year"></span></p>
+            <p>Labor Time Saved per Year on Repeats (hours)<span data-id="Labor Time Saved per Year on Repeats (hours)"></span></p>
+            <p>Labor Savings per Year on Repeats<span data-id="Labor Savings per Year on Repeats"></span></p>
+            <p>Total Labor Savings per Year (hours)<span data-id="Total Labor Savings per Year (hours)"></span></p>
+            <p>Total Labor Savings per Year ($)<span data-id="Total Labor Savings per Year ($)"></span></p>
+            <p>Savings Difference<span data-id="Savings Difference"></span></p>
+            <p>Total Savings per Year<span data-id="Total Savings per Year"></span></p>
+            <p>Annual Cost 96<span data-id="Annual Cost 96"></span></p>
+            <p>Daily Total per Sample 96<span data-id="Daily Total per Sample 96"></span></p>
+            <p>Daily Total per Batch 96<span data-id="Daily Total per Batch 96"></span></p>
+          </div>
+          
+
+          <!-- <p class="output" data-name="Samples Processed per Year using Manual Method">Samples Processed per Year using Manual Method</p><span data-output="output_value"></span>
+          <p class="output" data-name="Samples Processed per Year using Prep 9">Samples Processed per Year using Prep 96</p><span data-output="output_value"></span>
+          <p class="output" data-name="Annual Cost Associated with Sample Prep using Manual Method">Annual Cost Associated with Sample Prep using Manual Method</p><span data-output="output_value"></span>
+          <p class="output" data-name="Annual Cost Associated with Sample Prep using Prep 96">Annual Cost Associated with Sample Prep using Prep 96</p><span data-output="output_value"></span>
+          <p class="output" data-name="Annual Revenue with Sample Prep using Manual Method<">Annual Revenue with Sample Prep using Manual Method</p><span data-output="output_value"></span>
+          <p class="output" data-name="nnual Revenue with Sample Prep using Prep 96">Annual Revenue with Sample Prep using Prep 96</p><span data-output="output_value"></span>
+          <p class="output" data-name="Labor hours gained each Year using Prep 96">Labor hours gained each Year using Prep 96</p><span data-output="output_value"></span>
+          <p class="output" data-name="Gross Profit with Prep 96 Year #1">Gross Profit with Prep 96 Year #1</p><span data-output="output_value"></span>
+          <p class="output" data-name="Net Profit with Prep 96 Year #1">Net Profit with Prep 96 Year #1</p><span data-output="output_value"></span>
+          <p class="output" data-name="Return on Investment (ROI)">Return on Investment (ROI)</p><span data-output="output_value"></span>
+          <p class="output" data-name="Adjusted Gross Profit for Years">Adjusted Gross Profit for Years</p><span data-output="output_value"></span> -->
+        </div>
+      </div>
+  </section>
+  <footer>
+    <div class="container grid">
+      <div class="col col--1-2">
+        <p class="title-large">Who we are</p>
+        <p>Great science starts here: OMNI is a value-adding manufacturer of bead mill homogenizers that provide
+          consistent, repeatable and precise results—down to the nano particle, without contamination—for high-volume
+          sample preparation of solids for downstream analysis in labs, product development, quality control, and other
+          testing applications – so they can purify, detect and quantify with confidence.</p>
+      </div>
+      <div class="col col--1-2">
+        <p class="title-large">Contact us</p>
+        <address>
+          <p>935 Cobb Place Blvd</p>
+          <p>Kennesaw GA, 30144</p>
+          <p>United States</p>
+        </address>
+        <p>Email: sales@omni-inc.com</p>
+        <p>Phone: 770-421-0058</p>
+        <p>Toll-Free: 1-800-776-4431</p>
+        <p>Fax: 770-421-0206</p>
+      </div>
+    </div>
+  </footer> <!-- jQuery -->
+  <!-- <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
+  <!-- Font Awesome -->
+  <div id="overlay"></div>
+  <script src="https://use.fontawesome.com/97974f9c24.js"></script> <!-- My own scripts -->
+  <script src="js/scripts-min.js"></script>
+  </div>
 </body>
+
 </html>
+

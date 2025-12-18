@@ -1,0 +1,29 @@
+.features {
+    img {
+        max-width: 3rem;
+    }
+}
+
+.features--items {
+    display: flex;
+    
+    flex-direction: column;
+    .features--item {
+        flex-basis: 100%;
+        padding: 0 1rem 2rem 1rem;
+    }
+    @media(min-width: $min-width){
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        .features--item {
+            display: flex;
+            flex-basis: 50%;
+            align-items: flex-start;
+            img {
+                padding-right: 1rem;
+            }
+        }
+    }
+
+}

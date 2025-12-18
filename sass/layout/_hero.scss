@@ -1,0 +1,365 @@
+#prep96 .hero {
+    position: relative;
+    overflow: hidden;
+    padding-top: 8em;
+    padding-bottom: 8em;
+    background-image: url('https://www.omni-inc.com/assets/images/prep96lp/hero-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: $white;
+    p {
+        padding-bottom: 2rem;
+        margin: 0 auto;
+        @media(min-width: $min-width){
+            //max-width: 58ch;
+        }
+    }
+    .col {
+        align-items: center;
+    }
+    .col:first-of-type {
+        z-index: 1;
+    }
+    
+    .made-in-usa {
+        display: inline-block;
+        color: white;
+        min-width: 3rem;
+        height: auto;
+        vertical-align: bottom;
+        margin-left: 1rem;
+        img {
+            display: inline-block;
+            vertical-align: bottom;
+        }
+    }
+}
+#lh96 .hero {
+    position: relative;
+    overflow: hidden;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    background-image: url('/images/hero-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: $white;
+    p {
+        padding-bottom: 2rem;
+        margin: 0 auto;
+        @media(min-width: $min-width){
+            //max-width: 58ch;
+        }
+    }
+    .col {
+        align-items: center;
+    }
+    .col:first-of-type {
+        z-index: 1;
+    }
+
+    .btn--accent {
+        background-color: $accent;
+        color: $white;
+        border: 2px solid $accent;
+        &:hover, &:focus {
+            background-color: darken($accent, 5%);
+            border-color: darken($accent, 5%);
+        }
+    }
+    
+    .made-in-usa {
+        display: inline-block;
+        color: white;
+        min-width: 3rem;
+        height: auto;
+        vertical-align: bottom;
+        margin-left: 1rem;
+        img {
+            display: inline-block;
+            vertical-align: bottom;
+        }
+    }
+}
+
+.hero-prep96 {
+    max-width: 100%;
+    z-index: 0;
+    margin: auto;
+    text-align: center;
+    img {
+        max-width: 60vw;
+        @media(min-width: $min-width){
+            max-width: 40vw;
+        }
+    }
+    &::before {
+        position: absolute;
+        width: 140%;
+        height: 100%;
+        content: '';
+        top: 30%;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        background: radial-gradient(circle at center,#fff, #fff 10% , transparent 75%, transparent);
+        opacity: 0.1;
+        background-blend-mode: soft-light;
+        @media(min-width: $min-width){
+            text-align: right;
+            top: 0;
+            width: 180%;
+        }
+    }
+}
+
+#lh96  .hero-lh96 {
+  $buttonRadius: 24px;
+  $labelPaddingX: $buttonRadius * 1;
+  $labelBorderRadius: 2px;
+  $labelFade: 0.1s;
+  $colorButton: #ff6000;
+  $colorButtonHover: #ff774c;
+  $colorText: #333;
+  $colorHeadingBackground: #555;
+  
+  .container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+    }
+  
+  .lg-container {
+    max-width: 600px;
+    position: relative;
+    margin: 2em auto;
+    padding: 0;
+  }
+  
+  .lg-image {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down;
+  }
+  
+  .lg-hotspot {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    cursor: pointer;
+    &:hover,
+    &:active {
+      //  z-index: 999;
+      .lg-hotspot__button {
+        border-color: $colorButtonHover;
+        &:after {
+          background-color: $colorButtonHover;
+        }
+      }
+    }
+    &--selected {
+      z-index: 999;
+      .lg-hotspot__label {
+        opacity: 1;
+      }
+    }
+    &__button {
+      height: $buttonRadius * 2;
+      width: $buttonRadius * 2;
+      padding: 0px;
+      border-radius: 100%;
+      border: 1px solid $colorButton;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      z-index: 999;
+      animation: button-pulse 3s ease-in-out infinite;
+      &:after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        content: "";
+        display: block;
+        height: $buttonRadius * 0.7;
+        width: $buttonRadius * 0.7;
+        border-radius: 100%;
+        border: 3px solid white;
+        background-color: $colorButton;
+        transition: border-color 1s linear;
+      }
+    }
+    &__label {
+      position: absolute;
+      //padding: 0 0 1.1em 0;
+      // width: 16em;
+      // max-width: 50vw;
+      background-color: white;
+      font-family: "Open Sans", sans-serif;
+      font-size: 0;
+      line-height: 0;
+      z-index: -1;
+      pointer-events: none;
+      border-radius: 50%;
+      user-select: none;
+      opacity: 0;
+      transition: all $labelFade linear;
+      
+      img {
+          width: 189px;
+          height: 189px;
+          max-width: inherit;
+          object-fit: cover;
+          border-radius: 50%;
+          border: 6px solid #fff;
+          box-shadow: rgba(0, 0, 0, 0.5) 0px 20px 30px;
+      }
+      p {
+            line-height: 1em;
+      display: block;
+      font-size: 1rem;
+      position: absolute;
+      padding: 0.5em;
+      text-align: center;
+      margin: 0;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50.3%, -50%);
+      background-color: #1F55A4;
+      width: 94%;
+      border-radius: 6px;
+      }
+      
+    }
+  }
+  
+  .lg-hotspot--transfer-arm .lg-hotspot__label {
+    top: -150px;
+    left: -200px;
+  }
+  
+  .lg-hotspot--diluting .lg-hotspot__label {
+    top: -200px;
+    right: -80px;
+  }
+  
+  .lg-hotspot--homogenizing .lg-hotspot__label {
+    right: -220px;
+    bottom: 24px;
+  }
+  
+  .lg-hotspot--pipette .lg-hotspot__label {
+    bottom: 24px;
+    left: 24px;
+  }
+  .lg-hotspot--weighing-platform .lg-hotspot__label {
+      bottom: -4px;
+      left: -196px;
+    }
+  .hot-spot {
+    width: 20px;
+    height: 20px;
+    background-color: #D29A4E;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 0.8;
+    z-index: 1;
+      &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 2px solid #D29A4E;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      opacity: 0;
+      transition: 0.2s all;
+        &:hover {
+      cursor: pointer;
+      opacity: 1;
+        &:after {
+        width: 25px;
+        height: 25px;
+        opacity: 1;
+        }
+       }
+      }
+     }
+  
+  @keyframes button-pulse {
+    0% {
+      transform: scale(1, 1);
+      opacity: 1;
+    }
+    40% {
+      transform: scale(1.15, 1.15);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1, 1);
+      opacity: 1;
+    }
+  }
+}
+
+#lh96 .hero2 {
+  position: relative;
+  overflow: hidden;
+  padding-top: 8em;
+  padding-bottom: 8em;
+  background-image: url('/images/women-scientist-hard-working.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: $white;
+  text-align: center;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: inherit;
+    width: 100%;
+    height: 100%;
+    background-color: #1F55A4;
+    opacity: 0.8;
+  }
+  p {
+      padding-bottom: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      @media(min-width: $min-width){
+          //max-width: 58ch;
+      }
+  }
+  .col {
+      align-items: center;
+  }
+  .col:first-of-type {
+      z-index: 1;
+  }
+  
+  .made-in-usa {
+      display: inline-block;
+      color: white;
+      min-width: 3rem;
+      height: auto;
+      vertical-align: bottom;
+      margin-left: 1rem;
+      img {
+          display: inline-block;
+          vertical-align: bottom;
+      }
+  }
+}

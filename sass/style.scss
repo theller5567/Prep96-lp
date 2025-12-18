@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:light,normal,bold,black&display=swap');
+
+// 1.config files and helpers
+@import 'abstracts/_colors.scss';
+@import 'abstracts/_type.scss';
+
+
+// 2. Vendor
+@import 'vendor/_normailze.scss';
+@import 'vendor/_slippry.scss';
+
+@import 'layout/_grid.scss';
+
+// 3. Base styles
+@import 'base/_base.scss';
+@import 'base/_typography.scss';
+
+// 4. Layouts
+@import 'layout/_header.scss';
+@import 'layout/_hero.scss';
+@import 'layout/_features.scss';
+@import 'layout/_free-demo.scss';
+@import 'layout/_carousel.scss';
+@import 'layout/_summary.scss';
+@import 'layout/_roi.scss';
+@import 'layout/_footer.scss';
+@import 'layout/_tab-content.scss';
+
+
+// 5. Components
+@import 'components/_buttons.scss';
+@import 'components/_form.scss';
+@import 'components/_modal.scss';
+

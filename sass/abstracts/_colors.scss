@@ -1,0 +1,14 @@
+// Main colors
+$min-width: 960px;
+$main: hsla(217, 94%, 17%, 1);
+$secondary: hsla(221, 44%, 72%, 1);
+$accent: hsla(45, 78%, 49%, 1);
+$light-blue: rgba(51, 152, 219, 1);
+$white: hsla(255, 255%, 255%, 1);
+$dark: #444;
+// Text colors
+
+$text-main: $main;
+$text-inverse: $white;
+$text-accent: $accent;
+$text-secondary: $main;

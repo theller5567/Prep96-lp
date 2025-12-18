@@ -1,0 +1,71 @@
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: .75em 1em;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    &:not(:last-of-type){
+        margin-bottom: .6em;
+    }
+    &.btn--sm {
+        font-size: 0.75rem;
+    }
+}
+
+.btn--cta {
+    background-color: $accent;
+    color: $text-inverse;
+    border: 2px solid $accent;
+    &:hover, &:focus {
+        background-color: darken($accent, 5%);
+        border-color: darken($accent, 5%);
+    }
+    &.secondary {
+        background-color: transparent;
+        border: 2px solid $secondary;
+        transition:    border-color 0.3s ease-in-out     ;
+            -webkit-transition:    border-color 0.3s ease-in-out     ;
+            -moz-transition:    border-color 0.3s ease-in-out     ;
+            -ms-transition:    border-color 0.3s ease-in-out     ;
+            -o-transition:    border-color 0.3s ease-in-out     ;
+        &:hover, &:focus {
+            background-color: none;
+            border-color: white;
+            transition:    border-color 0.6s ease-in-out     ;
+            -webkit-transition:    border-color 0.6s ease-in-out     ;
+            -moz-transition:    border-color 0.6s ease-in-out     ;
+            -ms-transition:    border-color 0.6s ease-in-out     ;
+            -o-transition:    border-color 0.6s ease-in-out     ;
+}
+    }
+    &.play {
+        padding-left: 3em;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 1em;
+            width: 1.2em;
+            height: 1.37em;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            background-image: url('/images/play-icon.svg');
+            background-repeat: no-repeat;
+}
+    }
+}
+
+.btn--secondary {
+    border: 2px solid $text-inverse;
+    color: $text-inverse;
+    &:hover, &:focus {
+        background-color: $text-inverse;
+        color: $text-main;
+    }
+}

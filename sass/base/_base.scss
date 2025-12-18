@@ -1,0 +1,69 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+// GHOST OUTLINES2
+// * {
+//     background: #000 !important;
+//     color: #0f0 !important;
+//     outline: solid #f00 1px !important;
+//   }
+#maincontent.page-main {
+    max-width: 100%;
+    padding: 0;
+}
+html {
+    overflow-x:hidden;
+}
+body {
+    color: $dark;
+    text-align: center;
+    font-weight: $font-thin;
+    font-size: 18px;
+    @media(min-width: $min-width){
+        text-align: left;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    padding: 2rem auto;
+    text-align: left;
+    li {
+        padding: 1rem 0;
+    }
+}
+
+.container {
+    width: 100%;
+    margin: 0;
+    padding: 0 1.5rem;
+    @media(min-width: $min-width){
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+.unstyled-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lg-screen {
+    display: none;
+    @media(min-width: 725px){
+        display: block;
+    }
+}
+
+.bg-primary {
+    background-color: $main;
+    color: $text-inverse;
+    padding: 5em 2.5em;
+}

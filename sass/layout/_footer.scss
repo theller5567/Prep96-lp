@@ -1,0 +1,14 @@
+footer {
+    background: $white;
+    color: $dark;
+    address p {
+        margin: 0;
+    }
+    .col {
+        @media(min-width: $min-width){
+            &:last-of-type {
+                text-align: right;
+            }
+        }
+    }
+}

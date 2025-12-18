@@ -1,0 +1,8 @@
+.free-demo {
+    background: $main;
+    color: $white;
+    padding-bottom: 0;
+    @media(min-width: $min-width){
+        padding-bottom: 15rem;
+    }
+}
