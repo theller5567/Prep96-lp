@@ -1104,9 +1104,11 @@ h2 {
   transform: translateY(0);
   color: white;
   border-top: 2px solid white;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; }
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  display: none; }
   @media (min-width: 960px) {
     .carousel {
+      display: block;
       width: 90%;
       background: white;
       border-top: none;
@@ -1284,6 +1286,9 @@ h2 {
     margin-bottom: 2rem;
     padding-bottom: 1rem;
     max-width: 80%; }
+    @media (max-width: 960px) {
+      #roi .roi-header {
+        max-width: 100%; } }
     #roi .roi-header span {
       display: inline-block;
       font-size: 1.5rem;
@@ -1302,6 +1307,9 @@ h2 {
         max-width: 2.5rem; }
   #roi p {
     max-width: 70%; }
+    @media (max-width: 960px) {
+      #roi p {
+        max-width: 100%; } }
   #roi .roi-calculator p, #roi .outputs p {
     position: relative;
     padding-bottom: 25px;
@@ -1317,6 +1325,15 @@ h2 {
           opacity: 1;
           bottom: -20px;
           scale: 1; }
+      @media (max-width: 960px) {
+        #roi .roi-calculator p[data-name="estimated_savings_each_year"], #roi .outputs p[data-name="estimated_savings_each_year"] {
+          padding-bottom: 4rem; }
+          #roi .roi-calculator p[data-name="estimated_savings_each_year"] span.active, #roi .outputs p[data-name="estimated_savings_each_year"] span.active {
+            bottom: 0.5rem; } }
+    @media (max-width: 960px) {
+      #roi .roi-calculator p, #roi .outputs p {
+        padding-bottom: 3rem;
+        max-width: 25ch; } }
     #roi .roi-calculator p span, #roi .outputs p span {
       position: absolute;
       font-weight: 700;
@@ -1333,6 +1350,13 @@ h2 {
         opacity: 1;
         bottom: 25px;
         scale: 1; }
+      @media (max-width: 960px) {
+        #roi .roi-calculator p span, #roi .outputs p span {
+          width: 100%;
+          padding-left: 0px;
+          bottom: 0.5rem; }
+          #roi .roi-calculator p span.active, #roi .outputs p span.active {
+            bottom: 0.5rem; } }
   #roi em {
     font-size: 0.75rem; }
   #roi .testing {
