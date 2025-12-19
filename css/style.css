@@ -881,7 +881,9 @@ h2 {
   position: relative;
   margin: 2em auto;
   padding: 0; }
-
+  @media (max-width: 960px) {
+    #lh96 .hero-lh96 .lg-container {
+      margin: 0 auto; } }
 #lh96 .hero-lh96 .lg-image {
   display: block;
   height: 100%;
@@ -896,6 +898,9 @@ h2 {
   transform: translate(-50%, -50%);
   z-index: 0;
   cursor: pointer; }
+  @media (max-width: 960px) {
+    #lh96 .hero-lh96 .lg-hotspot {
+      display: none; } }
   #lh96 .hero-lh96 .lg-hotspot:hover .lg-hotspot__button, #lh96 .hero-lh96 .lg-hotspot:active .lg-hotspot__button {
     border-color: #ff774c; }
     #lh96 .hero-lh96 .lg-hotspot:hover .lg-hotspot__button:after, #lh96 .hero-lh96 .lg-hotspot:active .lg-hotspot__button:after {

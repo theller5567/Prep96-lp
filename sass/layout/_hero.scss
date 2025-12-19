@@ -137,6 +137,9 @@
     position: relative;
     margin: 2em auto;
     padding: 0;
+    @media(max-width: $min-width){
+        margin: 0 auto;
+    }
   }
   
   .lg-image {
@@ -153,6 +156,9 @@
     transform: translate(-50%, -50%);
     z-index: 0;
     cursor: pointer;
+    @media(max-width: $min-width){
+        display: none;
+    }
     &:hover,
     &:active {
       //  z-index: 999;
